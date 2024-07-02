@@ -20,10 +20,14 @@ setx GROQ_API_KEY "gsk_..."
 
 Run **data.py**
 
-- Process the pdf, create vector embeddings, database and save the db
+- Process the pdf
+- Generate vector embeddings using HuggingFaceEmbedding
+- Store embedded data in a FAISS vector db
+- Save the db locally
 
 
 Run **app.py**
 
-- Load the db, create template, prompt and chain.
+- Load the db
+- create template, prompt and chain using llama via Groq.
 - Invoke the chain by passing context, question and chat history.

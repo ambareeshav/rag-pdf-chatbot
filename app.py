@@ -36,7 +36,6 @@ def create_chain(llm, retriever):
           "chat_history": itemgetter("chat_history"),
           "context": itemgetter("question") | retriever,#the question is chained to the retriever that then returns k relevant documents from the vector database
           "question": itemgetter("question")
-
       }
       | rag_prompt
       | llm
@@ -44,7 +43,6 @@ def create_chain(llm, retriever):
   )
 
   return chain
-
 
 def chatbot(chain):
 
@@ -68,7 +66,7 @@ def main():
   db = load_index()
   retriever = db.as_retriever()
 
-  #Initializing llama using groq api
+  #using llama through groq api
   llm = ChatGroq(
     model_name = 'llama3-70b-8192'
     )
