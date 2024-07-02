@@ -1,0 +1,9 @@
+groq
+langchain
+langchain-core
+langchain-groq
+pypdf
+langchain_community
+faiss-cpu 
+langchain-huggingface
+transformers
