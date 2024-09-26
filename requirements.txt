@@ -1,9 +1,9 @@
-groq
 langchain
-langchain-core
-langchain-groq
-pypdf
 langchain_community
-faiss-cpu 
-langchain-huggingface
+langchain_core
+langchain_groq
+langchain_huggingface
+PyPDF2
+python-dotenv
+streamlit
 transformers

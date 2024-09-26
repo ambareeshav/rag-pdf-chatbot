@@ -9,7 +9,7 @@ from dotenv import load_dotenv
 import os
 
 load_dotenv()
-
+GROQ_API_KEY = "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"
 # Load the vectorstore
 @st.cache_resource
 def load_index():
