@@ -4,7 +4,9 @@ from langchain_community.vectorstores import FAISS
 from langchain_core.prompts import ChatPromptTemplate
 from operator import itemgetter
 from langchain_core.output_parsers import StrOutputParser
+import os
 
+os.environ["GROQ_API_KEY"] = ""
 #Loads the vectorstore created in data.py
 def load_index():
   embeddings = HuggingFaceEmbeddings(model_name="intfloat/multilingual-e5-large-instruct")
